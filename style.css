@@ -8,7 +8,37 @@ body{
    background-size: cover;
 }
 
-#bigtitile{
-    color: white;
+.container{
 
+display: inline-block;
+}
+
+.text{
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    color: rgb(148, 236, 16);
+    margin:0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) ;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: alternate
+        typing 2s steps(19) /*infinite*/,
+        cursor .4s step-end infinite alternate;
+    ;
+}
+
+/*cursor blinking*/
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+
+@keyframes typing{
+    from {width: 0}
 }
