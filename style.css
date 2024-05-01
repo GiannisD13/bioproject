@@ -1,0 +1,14 @@
+
+
+body{
+   background-image: url(./vol2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+#bigtitile{
+    color: white;
+
+}
