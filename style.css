@@ -6,11 +6,36 @@ body{
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
+   margin: 0;
+   padding: 0;
 }
 
 .container{
 
 display: inline-block;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20PX 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+
+.navbar{
+    
+    font-size: 18;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
 }
 
 .text{
@@ -29,16 +54,26 @@ display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     animation: alternate
-        typing 2s steps(19) /*infinite*/,
+        typing 2s steps(19) infinite,
         cursor .4s step-end infinite alternate;
     ;
 }
 
+/*.navbar{
+    background-color: black;
+    margin:0;
+    padding: 25;
+    border: 4px solid rgb(148, 236, 16);
+    position: static;
+
+}*/
+
 /*cursor blinking*/
 @keyframes cursor{
-    50% {border-color: transparent;}
+    50% {border-color: rgb(148, 236, 16);}
 }
 
 @keyframes typing{
     from {width: 0}
 }
+
